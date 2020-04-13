@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  background-image: radial-gradient(circle at 50% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  color: #fff;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 1.5rem;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input {
+  border-radius: 10px 0 0 10px;
+}
+
+form input,
+button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background-color: white;
+  outline: none;
+}
+
+form button {
+  background-color: #ce4621;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+}
+
+form button:hover {
+  color: #ce4621;
+  transition: all 0.5s ease-in-out;
+  background-color: #fff;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo {
+  margin: 0.5rem;
+  color: #000;
+  background-color: #fff;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.todo-item {
+  padding: 1rem;
+  flex: 1;
+}
+
+.complete-btn,
+.trash-btn {
+  padding: 1rem;
+  cursor: pointer;
+  color: #ce4621;
+}
+
+.trash-btn:hover {
+  color: #000;
+  background: #ce4621;
+}
+
+.complete-btn:hover {
+  color: rgb(0, 255, 0);
+  background-color: #ce4621;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall {
+  transform: translateY(10rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  width: 10rem;
+  height: 2rem;
+  padding: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ce4621;
+  padding: 0.3rem;
+  pointer-events: none;
+}
+
+.select:hover::after {
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+  color: #ce4621;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 100;
+}
+
+.copyright {
+  position: absolute;
+  top: 90%;
+  margin-left: 10px;
+}
